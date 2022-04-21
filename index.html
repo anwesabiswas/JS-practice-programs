@@ -15,30 +15,44 @@
         h1 {
             text-align: center;
         }
-        .card{
+
+        .card {
             display: flex;
+        }
+
+        .flex-center {
+            display: flex;
+            justify-content: center;
         }
     </style>
 </head>
 
 <body>
     <h1><u> <i>JS PRACTICE PROGRAMS</i></u></h1>
-    <div class="card" style="width: 18rem;">
-        <img src="./images/color_flipping.png" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Color Flipper</h5>
-            <p class="card-text">Change background colors by clicking</p>
-            <a href="https://anwesabiswas.github.io/JS-practice-programs/color-flipping/" class="btn btn-primary">Watch
-                my color flipping project</a>
+    <div class="row">
+        <div class="col-sm-4 flex-center">
+            <div class="card" style="width: 18rem;">
+                <img src="./images/color_flipping.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Color Flipper</h5>
+                    <p class="card-text">Change background colors by clicking</p>
+                    <a href="https://anwesabiswas.github.io/JS-practice-programs/color-flipping/"
+                        class="btn btn-primary">Watch
+                        my color flipping project</a>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-        <img src="./images/counter.png" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Counter</h5>
-            <p class="card-text">Increase,decrease,reset numbers by clicking</p>
-            <a href="https://anwesabiswas.github.io/JS-practice-programs/increase-decrease-counter/" class="btn btn-primary">Watch
-                my number counter project</a>
+        <div class="col-sm-4 flex-center">
+            <div class="card" style="width: 18rem;">
+                <img src="./images/counter.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Counter</h5>
+                    <p class="card-text">Increase,decrease,reset numbers by clicking</p>
+                    <a href="https://anwesabiswas.github.io/JS-practice-programs/increase-decrease-counter/"
+                        class="btn btn-primary">Watch
+                        my number counter project</a>
+                </div>
+            </div>
         </div>
     </div>
 </body>

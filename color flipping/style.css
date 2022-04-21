@@ -18,7 +18,7 @@ background-color: #808000;
 margin: 0px;
 padding: 5px;
 } */
-h1{
+h1 {
     font-family: sans-serif;
     font-size: 38px;
     text-align: center;
@@ -28,25 +28,28 @@ h1{
     text-align: center;
 }
 
-.wrapper{
+.wrapper {
     font-family: 'Lucida Sans regular';
     color: beige;
     display: flex;
     justify-content: center;
 }
+
 .wrapper .color-block {
     height: 100px;
     background-color: #808000;
-    width:500px ;
+    width: 500px;
     justify-content: center;
     align-items: center;
     display: flex;
     border-radius: 20px;
 }
-.wrapper .color-block .color-text{
+
+.wrapper .color-block .color-text {
     color: beige;
     font-size: 30px;
 }
-.btn{
+
+.btn {
     margin-top: 25px;
 }

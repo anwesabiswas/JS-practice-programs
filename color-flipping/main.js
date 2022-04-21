@@ -13,14 +13,18 @@ btn.addEventListener("click", function () {
 
 })
 
-function changeColor(color) {
-    if (color === 'Red') {
+function changeColor(selectedColor) {
+    if (selectedColor === 'Red') {
+        color.textContent='red';
         document.body.style.backgroundColor = 'red';
-    } else if (color === 'Blue') {
+    } else if (selectedColor === 'Blue') {
+        color.textContent='blue';
         document.body.style.backgroundColor = 'blue';
-    } else if (color === 'Yellow') {
+    } else if (selectedColor === 'Yellow') {
+        color.textContent='yellow';
         document.body.style.backgroundColor = 'yellow';
     } else {
+        color.textContent='green';
         document.body.style.backgroundColor = 'green';
     }
 }

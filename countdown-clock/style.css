@@ -1,0 +1,29 @@
+.countdown{
+    text-align: center;
+}
+h1{
+    font-size: 75px;
+    font-weight: bold;
+    font-style: italic;
+    color: darkorchid;
+    font-family:sans-serif ;
+}
+.container{
+    padding: 50px 0;
+    color: red;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.count-down-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+img{
+    border-radius: 30px;
+}
+body{
+    background-color: beige;
+}

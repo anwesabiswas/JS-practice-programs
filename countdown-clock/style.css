@@ -10,6 +10,10 @@ h1 {
     font-family: monospace;
 }
 
+h1.happy-birthday {
+    color: red;
+}
+
 .container {
     color: red;
     display: flex;

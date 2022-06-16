@@ -5,33 +5,41 @@ function clearFields() {
 }
 
 function checkItems(element) {
-    if(element.checked) {
+    if (element.checked) {
         element.parentElement.parentElement.style.textDecoration = 'line-through';
-        element.parentElement.parentElement.style.opacity= 0.5;
-    } else { 
+        element.parentElement.parentElement.style.opacity = 0.5;
+    } else {
         element.parentElement.parentElement.style.textDecoration = 'none';
-        element.parentElement.parentElement.style.opacity= 1;
+        element.parentElement.parentElement.style.opacity = 1;
 
     }
-    
-    
+
+
 }
 let table = document.querySelector('table')
 let nameInput = document.querySelector('#name');
-let dateInput = document.querySelector('#date');
 let timeInput = document.querySelector('#time');
-function addTodo(){
+
+function addTodo() {
     let name = nameInput.value;
-    let date = dateInput.value;
-    let time = timeInput.value;
-    
+    let time = new Date(timeInput.value);
+    const formatedDate = time.toLocaleDateString("en-GB", { // you can use undefined as first argument
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit",
+    })
+    const formatedTime = time.toLocaleString('en-US', {
+        hour: 'numeric',
+        minute: 'numeric',
+        hour12: true
+    })
     let template = `<tr>
     <th scope="row">
         <input type="checkbox" name="checkbox" id="checkbox" onclick="checkItems(this)">
     </th>
     <td>${name}</td>
-    <td >${date}</td>
-    <td>${time}</td>
+    <td >${formatedDate}</td>
+    <td>${formatedTime}</td>
 
     <td>
         <i class="bi bi-pencil-square"></i>
